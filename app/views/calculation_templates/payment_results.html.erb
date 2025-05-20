@@ -1,0 +1,5 @@
+<h1>Payment Results</h1>
+
+<p>
+  A loan of <%= number_to_currency(@principal) %> with an APR of <%= number_with_precision(@apr, precision: 4) %>% over <%= @years %> years would have a monthly payment of <%= number_to_currency(@monthly_payment) %>.
+</p>
